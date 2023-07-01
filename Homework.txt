@@ -1,0 +1,90 @@
+1. React is a Library or Framework? 
+ - React is a JavaScript library for building user interfaces. It is often referred to as a library rather than a framework.
+
+ - The distinction between libraries and frameworks can sometimes be a bit blurry, but generally speaking, a library is a collection of 
+   reusable code that provides specific functionality, while a framework is a more comprehensive toolset that provides a structure and 
+   guidelines for building applications.
+
+ - React focuses primarily on the UI layer of an application, providing a declarative syntax for creating reusable UI components. 
+   It allows developers to build dynamic and interactive user interfaces by efficiently updating and rendering components in 
+   response to changes in data.
+
+ - React itself doesn't provide features like routing, form validation, or state management out of the box. Instead, 
+   it encourages the use of additional libraries or frameworks to handle these aspects. This modular approach gives developers 
+   flexibility in choosing the tools they need and allows React to be integrated into existing projects easily.
+
+ - While React is often used in conjunction with other libraries or frameworks, such as React Router for routing or Redux for 
+   state management, it is considered primarily a library due to its focused purpose of building UI components and its flexibility 
+   in integrating with other tools.
+
+
+2. What is Emmet? 
+ - Emmet is a web development abbreviation engine or toolkit that allows developers to write HTML and CSS code faster and more efficiently. It provides a shorthand syntax for writing code 
+   and expands it into full-fledged HTML or CSS markup. 
+   Example: div.container>p*3 generates:
+            <div class="container">
+              <p></p>
+              <p></p>
+              <p></p>
+            </div>
+
+
+3. What is a CDN? 
+ - CDN stands for Content Delivery Network. It is a distributed network of servers located in multiple data centers around the world. 
+   The purpose of a CDN is to deliver web content, such as images, videos, scripts, and other static or dynamic files, to end-users 
+   with high performance and availability.
+ - CDNs work by caching static content in multiple edge servers distributed across different geographic locations. 
+ - CDNs enhance the performance, reliability, and scalability of websites and web applications 
+   by delivering content quickly and efficiently to users around the world.
+
+
+4. What is cross - orgin in the script tag ?
+
+ - If you serve React from a CDN, we recommend to keep the crossorigin attribute set:
+ - <script crossorigin src="..."></script> 
+ - We also recommend to verify that the CDN you are using sets the Access-Control-Allow-Origin: * HTTP header:
+ - This enables a better error handling experience
+
+5. What is the difference between async and defer attribute? 
+
+6. Why is React known as React ? 
+
+ - React is known as "React" because its core concept revolves around efficiently updating and rendering components in response to 
+   changes in data or state. 
+ - The name "React" reflects its reactive nature, as it reacts to changes and efficiently updates the user interface.
+
+7. What is the difference between React and ReactDOM ? 
+
+ - React and ReactDOM are two separate packages in the React ecosystem, each serving a distinct purpose:
+
+ - React: React is the core library that provides the functionality to build reusable UI components and manage the component lifecycle. 
+   It includes the essential features of React, such as the component architecture, state management, props, 
+   and the virtual DOM reconciliation algorithm. React is responsible for defining and rendering components, 
+   managing component state, handling events, and updating the user interface efficiently.
+
+ - ReactDOM: ReactDOM is a package specifically designed for working with the DOM (Document Object Model). 
+   It provides the necessary tools to interact with the actual browser DOM, allowing React to render components to the screen. 
+   ReactDOM acts as a bridge between React and the browser's DOM, providing methods for mounting, updating, and 
+   unmounting React components in the browser.
+
+ - To render React components to the DOM, you need to use the ReactDOM.render() method, which takes a React element or component and mounts 
+   it into a specified container in the DOM. ReactDOM also provides other methods for working with the DOM, 
+   such as ReactDOM.findDOMNode() to access the underlying DOM node of a React component and ReactDOM.createPortal() to render a 
+   component into a different DOM subtree.
+
+ - In summary, React is the core library that handles the component architecture and rendering logic, 
+   while ReactDOM is a separate package that enables React to interact with the browser's DOM and render components into the
+   actual web page. They work together to enable the creation and rendering of React components in a web browser environment.
+
+8. What is difference between react.development.js and react.production.js files via CDN ? 
+
+  - react.development.js: This file is intended for development purposes. It includes additional error-checking and warning messages 
+   that help developers identify potential issues and debug their React applications more easily. It is larger in file size compared to 
+   the production version as it contains extra development tools and features.
+
+  - react.production.js: This file is optimized for production use. It is smaller in file size as it is stripped of development-specific 
+   code and debugging capabilities. It omits warning messages and optimizations are applied to improve the runtime performance of the React 
+   application. The production version is typically recommended for deploying React applications to a live environment as it reduces 
+   bandwidth usage and improves the loading and execution speed of the application.
+
+
